@@ -1,0 +1,30 @@
+Building Ultimate Split-Screen 0.1.1
+
+Use an LLVM-MinGW toolchain with an i686 target and the UCRT runtime.
+The release was built with clang 23.1.1 (LLVM commit
+6dfe1677ab8dffbc6ec13d53a1e0215d75147689).
+
+https://github.com/mstorsjo/llvm-mingw/releases
+
+From PowerShell in this folder, with the toolchain bin directory on PATH:
+
+    .\build.ps1
+
+Or pass the path to i686-w64-mingw32-clang++.exe:
+
+    .\build.ps1 -Compiler 'C:\llvm-mingw\bin\i686-w64-mingw32-clang++.exe'
+
+The build folder contains Enable-Split.exe and TCS-Split-Prototype.dll.
+Keep both files together. The included BAT runs Enable-Split.exe --launch
+from the same folder to start the game through Steam and enable the mod.
+No game files are needed to compile the mod.
+
+Supported game executable
+
+    Steam app: 32440
+    Steam build: 1017673
+    Filename: LEGOStarWarsSaga.exe
+    SHA-256: 085688e73561c61f4619fcf1f3006c56425ca365e80ea5fc0175bab334cec671
+
+The loader hashes the executable on disk. The DLL also checks the
+expected code and menu entries in memory before installing its hooks.

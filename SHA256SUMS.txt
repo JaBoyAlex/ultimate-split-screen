@@ -1,0 +1,5 @@
+# SHA-256 of the original Nexus v0.1.1 distribution files
+9c6dce7bd134e195cabc3ff45679f5713e1eb64815f0656d037035c614225a62  Enable-Split.exe
+e2ddfe6f7dafa07623655d169ab15bbfb0c4b889cb1d4802a69b18c45853eef2  TCS-Split-Prototype.dll
+bca3ebc251151f8ce1bb9e98ae2884ef196974eb3dbac199d708f2104f194bed  Launch Ultimate Split-Screen.bat
+e95857d38ebfe91d5647162ffe0659128a0a601cb3b4b07d0823956ad841ecf7  Ultimate-Split-Screen-v0.1.1.zip
